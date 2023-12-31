@@ -1,0 +1,375 @@
+/*Blockly Styles*/
+/*Blockly Styles*/
+/* Makes our label white. */
+.blocklyTreeLabel {
+  color: grey;
+  font-size:12px;
+  font-weight:bold;
+  transition: 0.07s;
+}
+/* Adds padding around the group of categories and separators. */
+.blocklyToolboxContents {
+  padding: 1px;
+  transition: 0.2s;
+}
+/* Adds space between the categories, rounds the corners and adds space around the label. */
+.blocklyTreeRow {
+  padding: 0px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  transition: 0.2s;
+}
+/*Editor Styles*/
+body {
+	background-color:#edf2ff;
+	font-family:Arial;
+}
+.playerButton {
+	min-width:32px;
+	height:32px;
+	border:none;
+	margin-right:0px;
+	background:rgba(0, 0, 0, 0);
+	border-radius:8px;
+}
+.playerButton:hover {
+	cursor:pointer;
+	background:rgba(0, 0, 0, 0.2);
+}
+.gid_loadingscreen {
+	background-color:#339af0;
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.loadingscreen_text {
+	color:#ffffff;
+}
+
+.menuButton {
+	margin-top:7px;
+	margin-left:15px;
+}
+
+.menuButtonOrange {
+	color:white;
+	border-radius:8px;
+	width:auto;
+	height:35px;
+	border:none;
+	font-weight:bold;
+	float:left;
+	background-color:#ff9100;
+	transition: 0.07s;
+}
+.menuButtonOrange:hover {
+	background-color:#e68300;
+	cursor:pointer;
+}
+.buttonBlue {
+	color:white;
+	border-radius:8px;
+	width:auto;
+	height:35px;
+	border:none;
+	font-weight:bold;
+	background-color:#0095ff;
+	transition: 0.07s;
+}
+.buttonBlue:hover {
+	background-color:#0076c9;
+	cursor:pointer;
+}
+.blueTab {
+	min-width:100px;
+	justify-content:center;
+	display:flex;
+	color:white;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	width:fit-content;
+	height:35px;
+	border:none;
+	line-height:35px;
+	font-weight:bold;
+	background-color:#0095ff;
+	float:left;
+	margin-top:2px;
+	transition:0.07s;
+}
+.blueTab[selected="false"] {
+	background-color:#0076c9;
+	margin-top:6px;
+}
+.blueTab[selected="false"]:hover {
+	background-color:#91a7ff;
+	cursor:pointer;
+	margin-top:4px;
+}
+.loadingscreen_center_text {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -259px;
+    margin-top: -45px;
+}
+.gid_main_menu {
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:#339af0;
+	width:100%;
+	height:48px;
+	z-index:1000000;
+	display:flex;
+	overflow:hidden;
+	justify-content:left;
+}
+.gid_main_menu[hidemenu="true"] {
+	display:none;
+}
+.main_menu_item {
+	font-weight:bold;
+	color:#ffffff;
+	cursor:pointer;
+	margin-left:15px;
+	transition: 0.07s;
+}
+.main_menu_item:hover {
+	font-size:20px;
+	margin-top:13px;
+}
+.gid_leftPane {
+	position:fixed;
+	top:48px;
+	left:0;
+	height:calc(100vh - 48px);
+	width:50%;
+	background:#dbe4ff;
+}
+.gid_blocklyArea {
+	position:fixed;
+	top:84px;
+	left:0;
+	height:calc(100vh - 84px);
+	width:50%;
+}
+.right {
+	position:fixed;
+	top:48px;
+	right:0;
+	height:calc(100vh - 48px);
+	width:50%;
+}
+.dialog_background {
+	background-color:#339af0;
+	opacity:0.5;
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	left:0;
+}
+.dialog_box {
+	width:400px;
+	height:200px;
+	margin-top:-100px;
+	margin-left:-200px;
+	background-color:white;
+	position:fixed;
+	top:50%;
+	left:50%;
+	border-radius:6px;
+	color:black;
+}
+.dialog_box_top {
+	width:400px;
+	height:30px;
+	background-color:#339af0;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-200px;
+	border-radius:6px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+	color:white;
+}
+.gid_gameArea {
+	transition:0.5s;
+}
+.gid_gameTitle {
+	background-color:#1971c2;
+	border-radius:10px;
+	border:none;
+	float:left;
+	margin-left:15px;
+	height:30px;
+	margin-top:5px;
+	color:white;
+	font-weight:bold;
+	outline:none;
+	transition: 0.2s;
+	border-color:#1971c2;
+	border-style:solid;
+	border-size:1px;
+	width:100px;
+}
+.gid_gameTitle:focus {
+	border-color:white;
+	width:160px;
+}
+.center {
+margin: auto;
+width: 60%;
+border: 5px solid #FFFF00;
+padding: 10px;
+}
+.gid_gameScreen {
+	border-radius:0px;
+}
+.gid_discription {
+	background-color:white;
+	border:none;
+	border-style:solid;
+	border-color:#adb5bd;
+	border-width:1.5px;
+	outline:none;
+	width:480px;
+	height:360px;
+	overflow:auto;
+	font-family:arial;
+}
+.gid_console {
+	width:100%;
+	height:93%;
+	background-color:#343a40;
+	overflow:auto;
+	color:white;
+}
+.gid_conscontain {
+	position:fixed;
+	top:84px;
+	left:0;
+	height:calc(100vh - 84px);
+	width:50%;
+	background-color:#343a40;
+}
+.gid_files {
+	width:calc(100% - 3px);
+	height:93%;
+	background-color:#74c0fc;
+	overflow:auto;
+	border-style:solid;
+	border-color:#1864ab;
+	border-width:2px;
+}
+.gid_filecontain {
+	position:fixed;
+	top:84px;
+	left:0;
+	height:calc(100vh - 84px);
+	width:50%;
+	background-color:#74c0fc;
+}
+.RightContainerDiv {
+	width:100%;
+	height:calc(100vh - 463px);
+	overflow:auto;
+}
+.fullscreenGame {
+	top:0;
+	left:0;
+	position:fixed;
+	width:100%;
+	height:100vh;
+}
+/*#dialogBackground {
+	width:100%;
+	height:calc(100vh - 0px);
+	background-color:black;
+	z-index:100;
+	opacity:0.7;
+	display: none;
+	top:0;
+	left:0;
+	position:fixed;
+}
+#dialogBox {
+	width:400px;
+	height:250px;
+	background-color:#ffffff;
+	display: none;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -200px;
+	position: absolute;
+	border-color:grey;
+	border-width:1px;
+	border-style:solid;
+	z-index:200;
+}*/
+.logo {
+	transition: 0.2s;
+	margin-top:10px;
+	height:35px;
+	margin-top:6px;
+}
+.logo:hover {
+	height:35px;
+	margin-top:6px;
+}
+/* The animation code */
+@keyframes example {
+  0%   {transform: rotate(0deg);}
+  100%  {transform: rotate(360deg);}
+}
+
+/* The element to apply the animation to */
+.loading {
+  width: 100px;
+  height: 100px;
+  animation: rotation 8s infinite linear;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  margin-left:-3px;
+}
+.gid_libary {
+	top:0;
+	left:0;
+	position:fixed;
+	width:100%;
+	height:100vh;
+	background-color:#339af0;
+	z-index:1000;
+}
+.libary_item {
+	width:300px;
+	height:300px;
+	border-color:#339af0;
+	border-style:solid;
+	border-width:2px;
+}
+.main_menu_item_p:hover {
+	margin-left:12px;
+}
+.gid_main_menu_file_options {
+	position: fixed;
+    width: fit-content;
+    height: fit-content;
+    background-color: #339af0;
+    border-style: solid;
+    border-color: #364fc7;
+    border-width: 1px;
+    z-index: 100;
+    left: 100px;
+    top: 48px;
+}
+.separatorBarMenu {
+	color:#1c7ed6;
+}

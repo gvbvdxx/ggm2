@@ -1,0 +1,16 @@
+{
+  "name": "ggm2",
+  "version": "1.5.0",
+  "description": "game designing program for people to learn and to make games online",
+  "main": "index.js",
+  "scripts": {
+    "start": "node auto-dev.js",
+    "build": "node build.js"
+  },
+  "author": "Gvbvdxx",
+  "license": "MIT",
+  "dependencies": {
+    "gvbvdxx-pack-2": "^1.5.0",
+    "ws": "^8.14.2"
+  }
+}

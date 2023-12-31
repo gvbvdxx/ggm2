@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gvbvdxx Game Maker 2</title>
+		<link rel="icon" href="static/favicon.png?n=1">
+	</head>
+	
+	<body>
+		<script>
+			var updateWS = new WebSocket("ws://localhost:5737");
+			updateWS.addEventListener("message", (e) => {
+				if (e.data == "UPDATE") {
+					window.onbeforeunload = null;
+					window.location.reload();
+				}
+			});
+		</script>
+		<script src="main.js?n=1"></script>
+	</body>
+</html>
